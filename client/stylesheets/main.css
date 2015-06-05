@@ -1,0 +1,49 @@
+.card {
+  cursor: pointer;
+  display: inline-block;
+  height: 150px;
+  width: 150px;
+  margin: 20px;
+  -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+
+.card-B {
+  background-color: #ccc;
+}
+
+.card-G, [data-team="G"] {
+  background-color: #6C6;
+}
+
+.card-R, [data-team="R"] {
+  background-color: #C66;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+.right {
+  float: left;
+}
+
+.team {
+  border: 0;
+  border-bottom: 3px solid rgba(0,0,0,.17);
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  width: 200px;
+  text-align: center;
+  padding: 10px;
+}

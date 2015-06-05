@@ -1,0 +1,14 @@
+<template name="game">
+
+  <div class="right">
+    <button class="team" data-team="R">Red Team</button>
+    <button class="team" data-team="G">Green Team</button>
+  </div>
+
+  <div class="container">
+    {{#each cards}}
+      <div class="card card-{{this.state}}">{{this.index}}</div>
+    {{/each}}
+  </div>
+
+</template>
