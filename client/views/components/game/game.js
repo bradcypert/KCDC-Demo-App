@@ -11,13 +11,11 @@ Template.game.helpers({
 Template.game.events({
 
   'click .card': function(event, template){
-    var set = {};
-    set['cards.'+(this.index)+'.state']=Session.get('team');
-    Boards.update({_id: '7Gkbif3zvpP4HQePT'},{$set: set});
+    Meteor.call('updateBoardState', this.index, Session.get('team'));
   },
 
   'click .team': function(event, template){
     Session.set('team', event.target.dataset.team);
   }
-  
+
 });
