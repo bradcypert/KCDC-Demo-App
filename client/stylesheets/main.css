@@ -10,16 +10,36 @@
     -o-user-select: none;
 }
 
+@keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes roll-reverse {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
 .card-B, .card- {
   background-color: #ccc;
 }
 
 .card-G, [data-team="G"] {
   background-color: #6C6;
+  animation: roll 1s;
 }
 
 .card-R, [data-team="R"] {
   background-color: #C66;
+  animation: roll-reverse 1s;
 }
 
 .container {
